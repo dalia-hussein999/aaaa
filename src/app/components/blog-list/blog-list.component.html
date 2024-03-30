@@ -1,0 +1,31 @@
+<div class="blog-list">
+<div class="container">
+  <app-error-message *ngIf="error" [message]="error" (retry)="retry()"></app-error-message>
+  <app-loading-indicator *ngIf="isLoading"></app-loading-indicator>
+  
+  <div *ngIf="!isLoading && !hasPosts" class="alert alert-info">
+    There are no blog posts to show.
+  </div>
+  
+  <div *ngIf="!isLoading" class="row">
+    <div class="col-md-4" *ngFor="let post of posts">
+      <app-blog-item [post]="post"></app-blog-item>
+    </div>
+  </div>
+
+  <app-pagination *ngIf="!error" [currentPage]="currentPage" 
+                  [totalItems]="totalItems" 
+                  [itemsPerPage]="postsPerPage" 
+                  (pageChange)="onPageChange($event)" 
+                  class="col-2 mx-auto">
+  </app-pagination>
+</div>
+</div>
+
+
+
+
+
+
+
+  

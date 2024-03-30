@@ -1,0 +1,7 @@
+.blog-list{
+    background-image: url(../../../assets/images/background.png);
+    background-repeat: no-repeat;
+   background-size: 100% auto;
+   padding: 4.75rem;
+   margin-top: -6rem;
+}
