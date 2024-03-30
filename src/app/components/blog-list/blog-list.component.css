@@ -1,7 +1,13 @@
-.blog-list{
-    background-image: url(../../../assets/images/background.png);
-    background-repeat: no-repeat;
-   background-size: 100% auto;
-   padding: 4.75rem;
-   margin-top: -6rem;
+.blog-list {
+  background-image: url(../../../assets/images/background.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 4.75rem 0;
+  margin-top: -6rem;
+}
+@media (width < 768px) {
+  .blog-list {
+    padding: 1rem 0;
+    margin-top: -0.25rem;
+  }
 }
