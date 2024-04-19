@@ -1,15 +1,15 @@
   <div class="card" (click)="openPost()">
-    <img class="card-img-top" [src]="post.cover_image" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">{{ post.title }}</h5>
-      <p class="card-text">{{ post.description }}</p>
+    <img  [src]="post.cover_image" alt="Card image cap">
+    <div class="card-body card-content">
+      <h5 class="card-title title">{{ post.title }}</h5>
+      <p class="card-text text">{{ post.description }}</p>
       <div class="author">
         <figure>
           <img [src]="post.user.profile_image" alt="">
         </figure>
         <div class="author-info">
-          <h6>{{post.user.name}}</h6>
-      <p class="card-text"><small class="text-muted">{{post.readable_publish_date}}</small></p>
+          <h6 style="color: #101828;">{{post.user.name}}</h6>
+      <p class="date">{{post.readable_publish_date}}</p>
     </div>
     </div>
     </div>

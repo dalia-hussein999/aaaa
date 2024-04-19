@@ -2,23 +2,36 @@
   background-image: url(../../../assets/images/background.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
-  padding: 4.75rem 0;
-  margin-top: -6rem;
+
+  padding: 40px 0 64px;
+}
+.blog-list-container {
+  width: 1280px;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.error-message{
+.error-message {
   background-color: #fff;
   margin-top: -6rem;
   margin-bottom: 2rem;
 }
 
-
 @media (width < 768px) {
+  .blog-list{
+    margin-bottom: 48px;
+  }
+  .flex {
+    flex-direction: column;
+  }
   .blog-list {
     padding: 1rem 0;
-    margin-top: -0.25rem;
+    /* margin-top: -0.25rem; */
   }
-  .error-message{
+  .error-message {
     margin-top: -2-0.25rem;
   }
 }

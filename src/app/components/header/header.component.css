@@ -6,13 +6,19 @@ header{
     
 }
 
-span{
+.blog , .pricing{
     display: inline-block;
-    padding: 0.25rem 0.75rem;
+    padding: 4px 12px;
     background-color: #f0e6fe;
     border-radius: 1rem;
+    font-size: 14px;
+    color:#6941C6;
+}
+.pricing{
+    display: none;
 }
 h1{
+    margin: 16px auto 24px;
     font-size: 3rem;
     font-weight: 600;
     color: #42307D;
@@ -22,13 +28,21 @@ p{
     color: #6941C6;
 }
 .search{
-    width: 30%;
-    margin: 3rem auto;
+    width: 320px;
+    margin: 40px auto 96px;
 }
 
 
 @media (width < 768px){
     .search{
-        width: 100%;
+        width: 343px;
+        margin-top: 32px;
+        
+    }
+    .pricing{
+        display: inline-block;
+    }
+    .blog{
+        display: none;
     }
 }
